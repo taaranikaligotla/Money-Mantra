@@ -1,3 +1,4 @@
+import setup
 from dotenv import load_dotenv
 import os
 
