@@ -230,7 +230,7 @@ def index():
         # Get payer spending for the user
         payersChart = tendie_reports.generatePayersReport(session["user_id"])
 
-        return render_template("index.html", categories=categories, payers=payers, date=date, income=income, expenses_year=expenses_year, expenses_month=expenses_month, expenses_week=expenses_week, expenses_last5=expenses_last5,
+        return render_template("templates/index.html", categories=categories, payers=payers, date=date, income=income, expenses_year=expenses_year, expenses_month=expenses_month, expenses_week=expenses_week, expenses_last5=expenses_last5,
                                budgets=budgets, spending_week=spending_week, spending_month=spending_month, spending_trends=spending_trends, payersChart=payersChart)
 
     # User reached route via POST
@@ -245,7 +245,7 @@ def index():
         expenses = tendie_expenses.addExpenses(formData, session["user_id"])
 
         # Redirect to results page and render a summary of the submitted expenses
-        return render_template("expensed.html", results=expenses)
+        return render_template("templates/expensed.html", results=expenses)
 
 
 @app.route("/expenses", methods=["GET"])
