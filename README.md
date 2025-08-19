@@ -1,9 +1,5 @@
 # Money Mantra
 
-"Your personal finance companion—because your money deserves a little romance."
-
-# Overview
-
 Money Mantra is a web application designed to help you track expenses, manage budgets, and generate insightful reports. Built with Python and Flask, it offers a user-friendly interface to keep your finances in check.
 
 # Features
@@ -26,42 +22,42 @@ Installation
 - git clone https://github.com/taaranikaligotla/Money-Mantra.git
 - cd Money-Mantra
 - Create a virtual environment:
-"""
+'''
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-"""
+'''
 - Install dependencies:
-"""
+'''
  pip install -r requirements.txt
-"""
+'''
 - Set up the database:
-"""
+'''
 psql -U postgres -f dbCreateStatements-Postgres.txt
-"""
+'''
 - Configure environment variables:
 
 Create a .env file and add your PostgreSQL credentials:
-"""
+'''
 DB_USER=your_username
 DB_PASSWORD=your_password
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=money_mantra
-"""
+'''
 
 - Run the application:
-"""
+'''
 python app.py
-"""
+'''
 
 The app will be live at http://localhost:5000.
 
 # Testing
 
 Run the test suite to ensure everything is functioning correctly:
-"""
+'''
 pytest
-"""
+'''
 
 # Live Demo
 
