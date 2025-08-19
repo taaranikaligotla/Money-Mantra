@@ -55,9 +55,9 @@ python app.py
 # Testing
 
 Run the test suite to ensure everything is functioning correctly:
-'''
+```
 pytest
-'''
+```
 
 # Live Demo
 
